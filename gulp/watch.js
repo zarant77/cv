@@ -19,6 +19,10 @@ module.exports = function (gulp, $, options) {
         return gulp.watch(options.dir.src + '/js/**/*.js', gulp.parallel('scripts'));
     });
 
+    gulp.task('watch-images', function () {
+        return gulp.watch(options.dir.src + '/images/**/*', gulp.parallel('copy-images'));
+    });
+
     gulp.task('server', function (done) {
         $.connect.server({
             root: options.dir.dest,

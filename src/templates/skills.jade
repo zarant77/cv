@@ -1,0 +1,40 @@
+mixin stars(count)
+    - var n = 0
+    while n < 5
+        - n++
+        if n <= count
+            i.fa.fa-star
+        else
+            i.fa.fa-star-o
+
+mixin years(count)
+    if typeof count === 'number'
+        - count = new Date().getFullYear() - count
+
+        if count === 1
+            span 1 year
+        else
+            span=count + ' years'
+    else
+        span=count
+
+mixin skillItem(title, item)
+    tr
+        td=title
+        td
+            +years(item[0])
+        td
+            +stars(item[1])
+
+section#skills
+    h3 Skills
+
+    - each group, groupTitle in skills
+        table(cellpadding=0, cellspacing=0)
+            tr
+                th(width='40%') #{groupTitle}
+                th(width='30%') Working experience
+                th(width='30%') Level
+
+            - each skill, skillTitle in group
+                +skillItem(skillTitle, skill)

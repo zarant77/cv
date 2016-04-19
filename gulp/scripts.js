@@ -7,8 +7,8 @@ module.exports = function (gulp, $, options) {
                 options.dir.modules + '/lodash/dist/lodash.min.js',
                 options.dir.src + '/js/*.js'
             ])
-            .pipe($.concat('scripts.js'))
-            .pipe(gulp.dest(options.dir.dest))
+            .pipe($.concat('main.js'))
+            .pipe(gulp.dest(options.dir.dest + '/js'))
             .pipe($.connect.reload());
     });
 };

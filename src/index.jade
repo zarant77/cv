@@ -2,12 +2,15 @@ doctype html
 html(lang='en')
     head
         title Anton Zarubin - CV
-        script(type='text/javascript', src='scripts.js')
-        link(rel='stylesheet', media='all', href='/main.css')
-        link(rel='stylesheet', media='print', href='/print.css')
+        script(type='text/javascript', src='js/main.js')
+        link(rel='stylesheet', media='all', href='/css/main.css')
+        link(rel='stylesheet', media='print', href='/css/print.css')
 
     body
         #container
             include ./templates/header
             include ./templates/navigation
             include ./templates/summary
+            include ./templates/education
+            include ./templates/skills
+            include ./templates/experience

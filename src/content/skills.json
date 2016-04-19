@@ -1,0 +1,9 @@
+{
+  "OS/Platform": {
+    "Windows NT/Server 2003": [1998, 5],
+    "FreeBSD/Linux": [2004, 5]
+  },
+  "Programming Language": {
+    "JavaScript, with OOP": [2004, 5]
+  }
+}

@@ -1,0 +1,37 @@
+nav {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    margin-top: -100px;
+
+    a {
+        display: block;
+        width: auto;
+        height: 30px;
+        overflow: hidden;
+        text-decoration: none;
+        color: @colorNavLink;
+        font-size: 20px;
+
+        span {
+            display: inline-block;
+            float: right;
+            max-width: 0;
+            overflow: hidden;
+            text-align: right;
+            .transition(max-width 1s);
+        }
+
+        i {
+            float: right;
+            width: 30px;
+            text-align: center;
+        }
+    }
+
+    a:hover {
+        span {
+            max-width: 1000px;
+        }
+    }
+}

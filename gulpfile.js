@@ -8,6 +8,7 @@ var options = {
     },
     taskPath: './gulp/',
     livereloadPort: 1234,
+    serverHost: 'localhost',
     serverPort: 8080
 };
 
@@ -37,6 +38,9 @@ gulp.task(
             'jade',
             'scripts'
         ),
-        (plugins.util.env.production ? 'gzip' : 'null')
+        gulp.parallel(
+            'pdf',
+            (plugins.util.env.production ? 'gzip' : 'null')
+        )
     )
 );

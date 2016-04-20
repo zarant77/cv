@@ -36,6 +36,7 @@ module.exports = function (gulp, $, options) {
         'clean',
         gulp.parallel('copy', 'jade', 'less', 'scripts'),
         'server',
+        'pdf',
         gulp.parallel('watch-jade', 'watch-less', 'watch-scripts')
     ));
 };

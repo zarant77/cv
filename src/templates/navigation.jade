@@ -1,24 +1,10 @@
+mixin navItem(title, href, ico)
+    a(href='#' + href, title=title)
+        i.fa(class='fa-' + ico)
+        span=title
+
 nav
-    a(href='#summary')
-        i.fa.fa-file-text
-        span Summary
-
-    a(href='#education')
-        i.fa.fa-bank
-        span Education
-
-    a(href='#skills')
-        i.fa.fa-rocket
-        span Skills
-
-    a(href='#experience')
-        i.fa.fa-thumbs-up
-        span Experience
-
-    a(href='#contact')
-        i.fa.fa-envelope
-        span Contact
-
-    a(href='#code-examples')
-        i.fa.fa-github-alt
-        span Code examples
+    +navItem('General', 'general', 'universal-access')
+    +navItem('Skills', 'skills', 'rocket')
+    +navItem('Experience', 'experience', 'thumbs-up')
+    +navItem('Download CV', 'download', 'download')

@@ -8,15 +8,21 @@ mixin stars(count)
             i.fa.fa-star-o
 
 mixin years(count)
-    if typeof count === 'number'
-        - count = new Date().getFullYear() - count
-
-        if count === 1
+    if typeof count !== 'number'
+        span=count
+    else if count < 1000
+        if count < 1
+            span Less than a year
+        else if count === 1
             span 1 year
         else
             span=count + ' years'
     else
-        span=count
+        - count = new Date().getFullYear() - count
+        if count === 1
+            span 1 year
+        else
+            span=count + ' years'
 
 mixin skillItem(title, item)
     tr

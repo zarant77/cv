@@ -7,7 +7,9 @@ module.exports = function (gulp, $, options) {
         var jadeVars = {
             pretty: !$.util.env.production,
             locals: {
-                skills: JSON.parse(fs.readFileSync(__dirname + '/../src/content/skills.json'))
+                experience: JSON.parse(fs.readFileSync(__dirname + '/../src/content/experience.json')),
+                skills: JSON.parse(fs.readFileSync(__dirname + '/../src/content/skills.json')),
+                technologies: JSON.parse(fs.readFileSync(__dirname + '/../src/content/technologies.json'))
             }
         };
 

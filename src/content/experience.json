@@ -1,0 +1,129 @@
+[
+  {
+    "company": "Freelancer (Odesk/Upwork)",
+    "url": "http://upwork.com/",
+    "position": "Node.js Developer",
+    "from": 2014,
+    "to": 0,
+    "description": "More than year I used to work remotely for MarketWave. (http://www.market-wave.com/)\nMarketWave is company who provide customer multi-channels management (Phone, Live Chat, etc).\nCompany provide sales support for visitors with key leaders of e-commerce.\nThey was my general clients.",
+    "responsibilities": [
+      "Design, develop, test and deploy web applications",
+      "Develop appropriate code structures to solve specific tasks according to standards",
+      "Fix bugs, troubleshoot and resolve problems",
+      "Build flexible data models and seamless integration points",
+      "Comment code and write documentation using ApiDoc",
+      "Code review"
+    ],
+    "technologies": {
+      "Platforms": "Node.js",
+      "Frameworks": "Express, Angular, Bootstrap",
+      "Databases": "MS SQL, Couchbase, Elasticsearch",
+      "Documentation": "ApiDoc",
+      "QA": "Mocha, JSHint",
+      "Another tools": "Less, Jade, Grunt, Bower, NPM"
+    }
+  },
+  {
+    "company": "QCoders",
+    "url": "http://qcoders.com/",
+    "position": "Team Leader / Project Manager",
+    "from": 2012,
+    "to": 2014,
+    "description": "During work in this company I had only one general project which was divided to few small subprojects.\nInTouch http://intouch.inweb24.us/\nInTouch is a email marketing system. Like MailChimp or Mandrill but with an emphasis in network marketing. I'm started this project from scratch. Gradually our team has grown up to 7 developers.\nIt was first experience with Node.js on commercial project.",
+    "responsibilities": [
+      "Project management",
+      "Team management (team of seven members)",
+      "Estimating and resource planning",
+      "Design and development of system architecture",
+      "Design and development of source code",
+      "Database design and development",
+      "GUI design",
+      "Code review"
+    ],
+    "technologies": {
+      "Platforms": "Node.js",
+      "Frameworks": "Express, Backbone, Bootstrap",
+      "Databases": "MongoDB",
+      "Documentation": "RAML",
+      "QA": "Mocha",
+      "Another tools": "Less, Jade, Grunt, Bower, NPM"
+    }
+  },
+  {
+    "company": "Quadecco",
+    "url": "http://quadecco.de/",
+    "position": "Senior Software Developer / Team Leader",
+    "from": 2011,
+    "to": 2012,
+    "description": "Development of many projects for outsourcing company using following technologies",
+    "responsibilities": [
+      "Team management",
+      "Estimating and resource planning",
+      "Design and development of system architecture",
+      "Design and development of source code",
+      "Database design and development",
+      "GUI design",
+      "Code review"
+    ],
+    "technologies": {
+      "Platforms": "PHP, Javascript, HTML, CSS",
+      "Frameworks": "YII, Zend Framework, jQuery, Mootools",
+      "Databases": "MySQL, MSSQL"
+    }
+  },
+  {
+    "company": "ZFort Group",
+    "url": "http://www.zfort.com.ua/",
+    "position": "Senior Software Developer / Team Leader",
+    "from": 2009,
+    "to": 2011,
+    "description": "Development of many projects for outsourcing company using following technologies",
+    "responsibilities": [
+      "Team management",
+      "Estimating and resource planning",
+      "Design and development of system architecture",
+      "Design and development of source code",
+      "Database design and development",
+      "GUI design",
+      "Code review"
+    ],
+    "technologies": {
+      "Platforms": "PHP, Javascript, HTML, CSS",
+      "Frameworks": "YII, PRADO, Zend Framework, jQuery",
+      "Databases": "MySQL"
+    }
+  },
+  {
+    "company": "Intetics Co",
+    "url": "http://intetics.com/",
+    "position": "Software Developer",
+    "from": 2007,
+    "to": 2009,
+    "description": "Development of many projects for outsourcing company using following technologies",
+    "responsibilities": [
+      "Code development",
+      "Database development"
+    ],
+    "technologies": {
+      "Platforms": "PHP, Javascript, HTML, CSS",
+      "Frameworks": "jQuery",
+      "Databases": "MySQL"
+    }
+  },
+  {
+    "company": "Letwork",
+    "url": "http://www.letwork.com/",
+    "position": "Junior Software Developer",
+    "from": 2005,
+    "to": 2006,
+    "description": "Development of many projects for outsourcing company using following technologies",
+    "responsibilities": [
+      "Code development",
+      "Database development"
+    ],
+    "technologies": {
+      "Platforms": "PHP, Javascript, HTML, CSS",
+      "Databases": "MySQL"
+    }
+  }
+]

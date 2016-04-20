@@ -4,6 +4,63 @@
     "FreeBSD/Linux": [2004, 5]
   },
   "Programming Language": {
-    "JavaScript, with OOP": [2004, 5]
+    "JavaScript, with OOP": [2004, 5],
+    "HTML/CSS": [2004, 5],
+    "PHP": [10, 5],
+    "C++": ["2 years (non-commercial usage)", 3],
+    "Java": ["1 year (non-commercial usage)", 2]
+  },
+  "NoSQL DBMS": {
+    "MongoDB": [1, 5],
+    "Couchbase": ["2 years", 5],
+    "Elasticsearch": ["2 years", 5],
+    "Redis": [2012, 5]
+  },
+  "Relational DBMS": {
+    "MS SQL": ["3 years", 5],
+    "MySQL": [2004, 5],
+    "PostgreSQL": [1, 3]
+  },
+  "ORM": {
+    "Sequelize": [2013, 5],
+    "Mongoose": [1, 5],
+    "Ottoman (Couchbase ORM)": [0, 5]
+  },
+  "Tools/Frameworks": {
+    "Node.js": [2012, 5],
+    "Express.js": [2012, 5],
+    "HAPI": [0, 5],
+    "jQuery": [2009, 5],
+    "Angular": [1, 3],
+    "Backbone": [1, 3],
+    "React": [0, 4],
+    "PhoneGap / Cordova": [0, 2],
+    "Jade": [2012, 5],
+    "LESS": [2012, 5],
+    "SASS": [0, 2],
+    "Bootstrap": [2012, 5],
+    "Material-UI": [2004, 4]
+  },
+  "Team Collaboration Tools": {
+    "Git": [5, 5],
+    "Subversion": [5, 5],
+    "Atlassian JIRA": [2, 4],
+    "Redmine": [1, 5],
+    "Target Process": [1, 3]
+  },
+  "Network Technologies": {
+    "HTTP(S) REST": [2011, 5],
+    "OAuth (1, 2)": [1, 4],
+    "WebSocket": [1, 4]
+  },
+  "Other Tools": {
+    "Gulp": [2015, 5],
+    "Grunt": [2012, 5],
+    "NPM": [2012, 5],
+    "Bower": [2012, 5],
+    "ApiDoc": [2014, 5],
+    "RAML, Swagger": [1, 4],
+    "Mocha": [2012, 5],
+    "JSHint": [2014, 5]
   }
 }

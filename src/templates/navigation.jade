@@ -1,10 +1,10 @@
-mixin navItem(title, href, ico)
-    a(href='#' + href, title=title)
-        i.fa(class='fa-' + ico)
+mixin navItem(title, name)
+    a(href='#' + name, title=title)
+        i(class='icon-' + name)
         span=title
 
 nav
-    +navItem('General', 'general', 'universal-access')
-    +navItem('Skills', 'skills', 'rocket')
-    +navItem('Experience', 'experience', 'thumbs-up')
-    +navItem('Download CV', 'download', 'download')
+    +navItem('General', 'general')
+    +navItem('Skills', 'skills')
+    +navItem('Experience', 'experience')
+    +navItem('Download CV', 'download')

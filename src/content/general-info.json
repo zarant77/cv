@@ -26,7 +26,7 @@
     },
     {
       "title": "Email",
-      "icon": "envelope",
+      "icon": "email",
       "value": "anton.zarubin@gmail.com",
       "link": "mailto:anton.zarubin@gmail.com"
     },
@@ -46,7 +46,7 @@
     },
     {
       "title": "NPM",
-      "icon": "puzzle-piece",
+      "icon": "npm",
       "value": "npmjs.com/~zarant77",
       "link": "https://www.npmjs.com/~zarant77"
     }

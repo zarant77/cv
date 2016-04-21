@@ -1,8 +1,0 @@
-section#technologies.block
-    canvas#cloudTech(width='960', height='600')
-        ul
-            - each items, group in skills
-                - each info, title in items
-                    - var name = title.replace(new RegExp('[^a-z]', 'gi'), '').toLowerCase();
-                    li
-                        img(src='/images/tech/' + name + '.png', height=100)

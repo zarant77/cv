@@ -2,7 +2,7 @@
   "OS/Platform": {
     "Windows": [1998, 5],
     "Linux": [2004, 5],
-    "FreeBSD": ["2 years", 4]
+    "FreeBSD": [2004, 3]
   },
   "Programming Language": {
     "JavaScript": [2004, 5],
@@ -47,7 +47,7 @@
   "Team Collaboration Tools": {
     "Git": [5, 5],
     "Subversion": [5, 5],
-    "Atlassian JIRA": [2, 4],
+    "JIRA": [2, 4],
     "Redmine": [1, 5],
     "Target Process": [1, 3]
   },

@@ -4,10 +4,7 @@
   "dependencies": {
     "lodash": "^4.5.0",
     "jquery": "~2.1.4",
-    "font-awesome": "^4.5.0",
     "roboto-fontface": "^0.4.5",
-    "lesshat": "^3.0.2",
-    "tagcanvas": "bower-tagcanvas#^1.0.0",
-    "devicon": "*"
+    "lesshat": "^3.0.2"
   }
 }

@@ -7,9 +7,9 @@ module.exports = function (gulp, $, options) {
     var jadeVars = function (vars) {
         var locals = {
             experience: JSON.parse(fs.readFileSync(__dirname + '/../src/content/experience.json')),
+            generalInfo: JSON.parse(fs.readFileSync(__dirname + '/../src/content/general-info.json')),
             settings: JSON.parse(fs.readFileSync(__dirname + '/../src/content/settings.json')),
-            skills: JSON.parse(fs.readFileSync(__dirname + '/../src/content/skills.json')),
-            technologies: JSON.parse(fs.readFileSync(__dirname + '/../src/content/technologies.json'))
+            skills: JSON.parse(fs.readFileSync(__dirname + '/../src/content/skills.json'))
         };
 
         return {

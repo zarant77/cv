@@ -5,6 +5,7 @@ module.exports = function (gulp, $, options) {
         return gulp.src([
                 options.dir.modules + '/jquery/dist/jquery.min.js',
                 options.dir.modules + '/lodash/dist/lodash.min.js',
+                options.dir.modules + '/tagcanvas/tagcanvas.min.js',
                 options.dir.src + '/js/*.js'
             ])
             .pipe($.concat('main.js'))

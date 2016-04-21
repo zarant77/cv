@@ -4,19 +4,21 @@ mixin renderExpItem(item)
 
         div.subtitle
             span.company #{item.company}
-            a(href=item.url) #{item.url}
+            a(href=item.url, target='_blank') #{item.url}
 
         div.description #{item.description}
 
-        h4 Primary Responsibilities:
-        ul
-            - each resp in item.responsibilities
-                li #{resp}
+        div.list
+            h4 Primary Responsibilities:
+            ul
+                - each resp in item.responsibilities
+                    li #{resp}
 
-        h4 Used technologies and tools:
-        ul
-            - each techs, group in item.technologies
-                li #{group}: #{techs}
+        div.list
+            h4 Used technologies and tools:
+            ul
+                - each techs, group in item.technologies
+                    li #{group}: #{techs}
 
 
 section#experience.block

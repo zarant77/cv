@@ -1,62 +1,41 @@
+mixin sidebarItem(item)
+    li
+        i.fa(class='fa-' + item.icon)
+        if item.link
+            a(href=item.link, title=item.title, target='_blank')=item.value
+        else
+            span(title=item.title)=item.value
+
 section#general
     #header
         #photo
-            img(src='images/avatar.png')
+            img(src=generalInfo.photo)
 
-        h1 Anton Zarubin
-        h2 Senior Node.js Developer / Team Leader
+        h1=generalInfo.name
+        h2=generalInfo.position
 
     div.sidebar
         div.block
             h3 Contact
-
             ul
-                li
-                    i.fa.fa-phone
-                    span +380 98 9309333
-
-                li
-                    i.fa.fa-envelope
-                    a(href='mailto:anton.zarubin@gmail.com') anton.zarubin@gmail.com
-
-                li
-                    i.fa.fa-skype
-                    span anton_zarubin
+                - each item in generalInfo.contact
+                    +sidebarItem(item)
 
         div.block
-            h3 My projects
-
+            h3 Social
             ul
-                li
-                    i.fa.fa-github
-                    a(href='https://github.com/zarant77', target='_blank') github.com/zarant77
-
-                li
-                    i.fa.fa-connectdevelop
-                    a(href='https://www.npmjs.com/~zarant77', target='_blank') npmjs.com/~zarant77
+                - each item in generalInfo.social
+                    +sidebarItem(item)
 
     div.content
         div.block
             h3 Summary
-
-            p About ten years experience in PHP development, extensive experience in programming engineering and algorithm development.
-
-            p Over three years experience in Node.js development.
-
-            p Strong skills in development and implementation. Abilities in inventing solutions, algorithms, methods and approaches.
-
-            p Well skilled in database design and system architecture design.
-
-            p Strong skill in “Single Page Application” development.
-
-            p Good attention to details.
-
-            p Native languages - Russian and Ukrainian.<br>Conversational English.
+            ul
+                - each item in generalInfo.summary
+                    li=item
 
         div.block
             h3 Education
-
-            p Graduated from Kharkiv National University of Radio Electronics in 2007, Masters Degree. Kharkiv, Ukraine.
-
-            p M.S. in Computer Science, major in Computer Data Processing Systems
-
+            ul
+                - each item in generalInfo.education
+                    li=item

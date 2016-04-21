@@ -1,0 +1,54 @@
+{
+  "name": "Anton Zarubin",
+  "position": "Senior Node.js Developer / Team Leader",
+  "photo": "images/avatar.png",
+  "summary": [
+    "About ten years experience in PHP development.",
+    "Extensive experience in programming engineering and algorithm development.",
+    "Over three years experience in Node.js development.",
+    "Strong skills in development and implementation.",
+    "Abilities in inventing solutions, algorithms, methods and approaches.",
+    "Well skilled in database design and system architecture design.",
+    "Strong skill in “Single Page Application” development.",
+    "Good attention to details.",
+    "Native languages - Russian and Ukrainian. Conversational English."
+  ],
+  "education": [
+    "Graduated from Kharkiv National University of Radio Electronics in 2007, Masters Degree. Kharkiv, Ukraine.",
+    "M.S. in Computer Science, major in Computer Data Processing Systems."
+  ],
+  "contact": [
+    {
+      "title": "Phone",
+      "icon": "phone",
+      "value": "+380 98 9309333",
+      "link": ""
+    },
+    {
+      "title": "Email",
+      "icon": "envelope",
+      "value": "anton.zarubin@gmail.com",
+      "link": "mailto:anton.zarubin@gmail.com"
+    },
+    {
+      "title": "Skype",
+      "icon": "skype",
+      "value": "anton_zarubin",
+      "link": ""
+    }
+  ],
+  "social": [
+    {
+      "title": "GitHub",
+      "icon": "github",
+      "value": "github.com/zarant77",
+      "link": "https://github.com/zarant77"
+    },
+    {
+      "title": "NPM",
+      "icon": "puzzle-piece",
+      "value": "npmjs.com/~zarant77",
+      "link": "https://www.npmjs.com/~zarant77"
+    }
+  ]
+}

@@ -7,6 +7,7 @@ module.exports = function (gulp, $, options) {
 
     gulp.task('copy-fonts', function () {
         return gulp.src([
+            options.dir.modules + '/devicon/fonts/*.*',
             options.dir.modules + '/font-awesome/fonts/fontawesome-webfont.*',
             options.dir.modules + '/roboto-fontface/fonts/*.*'
         ]).pipe(gulp.dest(options.dir.dest + '/fonts'));

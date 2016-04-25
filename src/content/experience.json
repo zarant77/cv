@@ -2,6 +2,7 @@
   {
     "company": "Freelancer (Odesk/Upwork)",
     "url": "http://upwork.com/",
+    "logo": "upwork.gif",
     "position": "Node.js Developer",
     "from": 2014,
     "to": 0,
@@ -26,6 +27,7 @@
   {
     "company": "QCoders",
     "url": "http://qcoders.com/",
+    "logo": "qcoders.gif",
     "position": "Team Leader / Project Manager",
     "from": 2012,
     "to": 2014,
@@ -52,6 +54,7 @@
   {
     "company": "Quadecco",
     "url": "http://quadecco.de/",
+    "logo": "quadecco.gif",
     "position": "Senior Software Developer / Team Leader",
     "from": 2011,
     "to": 2012,
@@ -74,6 +77,7 @@
   {
     "company": "ZFort Group",
     "url": "http://www.zfort.com.ua/",
+    "logo": "zfort.gif",
     "position": "Senior Software Developer / Team Leader",
     "from": 2009,
     "to": 2011,
@@ -96,6 +100,7 @@
   {
     "company": "Intetics Co",
     "url": "http://intetics.com/",
+    "logo": "intetics.gif",
     "position": "Software Developer",
     "from": 2007,
     "to": 2009,
@@ -113,6 +118,7 @@
   {
     "company": "Letwork",
     "url": "http://www.letwork.com/",
+    "logo": "letwork.gif",
     "position": "Junior Software Developer",
     "from": 2005,
     "to": 2006,

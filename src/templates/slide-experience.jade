@@ -1,5 +1,8 @@
 mixin renderExpItem(item)
     div.item
+        //div.logo
+            img(src='images/companies/' + item.logo)
+
         div.title #{item.from} - #{item.to || 'Present time'}, #{item.position}
 
         div.subtitle

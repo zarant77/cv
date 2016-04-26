@@ -2,7 +2,7 @@
   "OS/Platform": {
     "Windows": [1998, 5],
     "Linux": [2004, 5],
-    "FreeBSD": [2004, 3]
+    "FreeBSD": ["2 years", 4]
   },
   "Programming Language": {
     "JavaScript": [2004, 5],

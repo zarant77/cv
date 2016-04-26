@@ -14,19 +14,6 @@ section#general
         h1=generalInfo.name
         h2=generalInfo.position
 
-    div.sidebar
-        div.block
-            h3 Contact
-            ul
-                - each item in generalInfo.contact
-                    +sidebarItem(item)
-
-        div.block
-            h3 Social
-            ul
-                - each item in generalInfo.social
-                    +sidebarItem(item)
-
     div.content
         div.block
             h3 Summary
@@ -39,3 +26,16 @@ section#general
             ul
                 - each item in generalInfo.education
                     li=item
+
+    div.sidebar
+        div.block
+            h3 Contact
+            ul
+                - each item in generalInfo.contact
+                    +sidebarItem(item)
+
+        div.block
+            h3 Social
+            ul
+                - each item in generalInfo.social
+                    +sidebarItem(item)

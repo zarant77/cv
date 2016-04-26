@@ -28,7 +28,7 @@ section#skills.block
     h3 Skills
 
     - each group, groupTitle in skills
-        div.group
+        div.group(class='group-' + groupTitle.replace(new RegExp('[^a-z]', 'gi'), '').toLowerCase())
             h4=groupTitle
 
             - each skill, skillTitle in group

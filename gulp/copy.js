@@ -1,6 +1,10 @@
 module.exports = function (gulp, $, options) {
     'use strict';
 
+    gulp.task('copy-favicon', function () {
+        return gulp.src(options.dir.src + '/favicon.ico').pipe(gulp.dest(options.dir.dest));
+    });
+
     gulp.task('copy-images', function () {
         return gulp.src(options.dir.src + '/images/**/*').pipe(gulp.dest(options.dir.dest + '/images'));
     });
@@ -12,5 +16,5 @@ module.exports = function (gulp, $, options) {
         ]).pipe(gulp.dest(options.dir.dest + '/fonts'));
     });
 
-    gulp.task('copy', gulp.parallel('copy-images', 'copy-fonts'));
+    gulp.task('copy', gulp.parallel('copy-favicon', 'copy-images', 'copy-fonts'));
 };

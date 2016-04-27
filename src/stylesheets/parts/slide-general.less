@@ -4,6 +4,7 @@
     width: 100%;
     height: 300px;
     background: url(../images/bg.png);
+    .defaultTransition();
 
     #photo {
         position: absolute;
@@ -15,10 +16,11 @@
         border-radius: 110px;
         border: 10px solid #004084;
         overflow: hidden;
+        .defaultTransition();
 
         img {
-            width: 200px;
-            height: 200px;
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -29,6 +31,7 @@
         margin: 0;
         color: #ffffff;
         font-size: 74px;
+        .defaultTransition();
     }
 
     h2 {
@@ -38,6 +41,7 @@
         margin: 0;
         color: #ffffff;
         font-size: 26px;
+        .defaultTransition();
     }
 }
 
@@ -53,7 +57,7 @@
         color: @colorPrimaryText;
 
         li {
-            line-height: 24px;
+            line-height: 32px;
         }
 
         i {
@@ -71,13 +75,14 @@
         width: 750px;
         height: 100%;
         background: @colorPrimaryBg;
+        .defaultTransition();
+
+        li {
+            line-height: 24px;
+        }
     }
 
     .block:first-child {
         margin: 320px 0 0 0;
-    }
-
-    li {
-        line-height: 24px;
     }
 }

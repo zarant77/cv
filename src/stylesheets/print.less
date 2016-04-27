@@ -1,13 +1,6 @@
-@colorPrimaryText: #000000;
-@colorSecondaryText: #6d6d6d;
-@colorLink: #000000;
-@colorNavLink: #6d6d6d;
-@colorHtmlBg: #f5f5f5;
-@colorPrimaryBg: #ffffff;
-@colorSecondaryBg: #eaeaea;
-
 @import '../../bower_components/lesshat/build/lesshat';
 @import '../../bower_components/roboto-fontface/css/roboto-fontface';
+@import './parts/variables';
 
 @page {
     size: A4;
@@ -54,6 +47,10 @@ section.block {
         .block {
             padding: 0 30px 0 30px;
             margin: 0;
+        }
+
+        li {
+            line-height: 24px;
         }
     }
 }

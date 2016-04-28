@@ -1,7 +1,6 @@
-mixin renderExpItem(item, key)
-    div.item(class='item-' + key)
-        //div.logo
-            img(src='images/companies/' + item.logo)
+mixin renderExpItem(item)
+    div.item(class='item-' + item.name)
+        div.company-logo(class=item.name)
 
         div.title #{item.from} - #{item.to || 'Present time'}, #{item.position}
 
@@ -27,5 +26,5 @@ mixin renderExpItem(item, key)
 section#experience.block
     h3 Experience
 
-    - each item, key in experience
-        +renderExpItem(item, key)
+    - each item in experience
+        +renderExpItem(item)

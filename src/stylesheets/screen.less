@@ -20,6 +20,27 @@
 }
 
 @media (max-width: 850px) {
+    nav {
+        right: auto;
+        top: auto;
+        bottom: 0;
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0 0 0;
+        background: @colorPrimaryBg;
+
+        a {
+            display: inline-block;
+        }
+
+        a:hover {
+            span {
+                display: none;
+            }
+        }
+    }
+
     #header {
         height: 150px;
         background-position: 0 -75px;
@@ -67,24 +88,10 @@
         }
     }
 
-    nav {
-        right: auto;
-        top: auto;
-        bottom: 0;
-        margin-top: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0 0 0;
-        background: @colorPrimaryBg;
-
-        a {
-            display: inline-block;
-        }
-
-        a:hover {
-            span {
-                display: none;
-            }
+    #experience {
+        .company-logo {
+            position: static;
+            margin: 0 0 10px 0;
         }
     }
 }

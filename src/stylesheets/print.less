@@ -2,12 +2,16 @@
 @import './parts/variables';
 
 @page {
-    size: A4;
+    //size: A4;
+    margin: 20px 0 20px 0;
+}
+
+@page:first {
     margin: 0;
 }
 
 html, body {
-    font-size: 20px;
+    font-size: 16px;
     color: #000000;
 }
 
@@ -23,11 +27,11 @@ section {
     min-height: initial;
     box-shadow: initial;
     background: initial;
-    page-break-after: always;
+    page-break-before: always;
 }
 
-section.block {
-    margin: 0 10px 0 10px;
+#container {
+    width: 100%;
 }
 
 #general {
@@ -35,6 +39,15 @@ section.block {
 
     #header {
         -webkit-print-color-adjust: exact;
+
+        h1 {
+            font-size: 56px;
+        }
+
+        h2 {
+            font-size: 20px;
+            top: 180px;
+        }
     }
 
     .content, .sidebar {
@@ -58,6 +71,7 @@ section.block {
     .row {
         -webkit-print-color-adjust: exact;
         display: block;
+        height: 40px;
         width: 100%;
         margin: 0 0 5px 0;
 
@@ -65,7 +79,7 @@ section.block {
             position: static;
             display: inline-block;
             width: 50px;
-            margin: 10px 0 0 10px;
+            margin: 6px 0 0 10px;
         }
 
         .title {
@@ -84,19 +98,21 @@ section.block {
             position: static;
             display: inline-block;
             float: right;
-            margin: 10px 10px 0 0;
+            margin: 6px 10px 0 0;
         }
     }
 
-    .group-toolsframeworks, .group-othertools {
+    .group-orm, .group-teamcollaborationtools {
         page-break-before: always;
-        padding-top: 50px;
     }
 }
 
 #experience {
-    .item-2 {
+    .item-quadecco, .item-letwork {
         page-break-before: always;
-        padding-top: 50px;
+    }
+
+    .company-logo {
+        -webkit-print-color-adjust: exact;
     }
 }

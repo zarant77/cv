@@ -14,10 +14,11 @@ var Layout = new function () {
 
         this.adjust();
         //this.navigate(keys[0]);
-    }
+    };
 
     this.adjust = function () {
-        $('section').css('min-height', $(window).height());
+        var height = $(window).height();
+        $('section').css('min-height', (height < 800) ? 800 : height);
     };
 
     this.navigate = function (name) {

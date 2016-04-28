@@ -2,6 +2,7 @@
     h4 {
         margin: 0 0 10px 0;
     }
+
     .group {
         margin: 0 0 20px 0;
     }
@@ -11,6 +12,7 @@
         position: relative;
         width: 475px;
         height: 45px;
+        margin: 0;
         background: @colorSecondaryBg;
         .border-radius(5px);
         .defaultTransition();
@@ -46,10 +48,9 @@
     }
 
     .row:nth-child(even) {
-        animation: slideInLeft .5s ease-in;
+        margin-right: 4px;
     }
 
     .row:nth-child(odd) {
-        animation: slideInRight .5s ease-in;
     }
 }

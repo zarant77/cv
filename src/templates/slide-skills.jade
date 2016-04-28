@@ -9,7 +9,7 @@ mixin stars(count)
 
 mixin years(count)
     if typeof count !== 'number'
-        span=count
+        span!=count
     else if count < 1000
         if count < 1
             span Less than a year

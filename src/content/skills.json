@@ -9,8 +9,8 @@
     "HTML": [2004, 5],
     "CSS": [2004, 5],
     "PHP": [10, 5],
-    "C++": ["2 years (non-commercial usage)", 3],
-    "Java": ["1 year (non-commercial usage)", 2]
+    "C++": ["2 years <i>(non-commercial usage)</i>", 3],
+    "Java": ["1 year <i>(non-commercial usage)</i>", 2]
   },
   "NoSQL DBMS": {
     "MongoDB": [1, 5],

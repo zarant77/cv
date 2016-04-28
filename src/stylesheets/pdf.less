@@ -1,0 +1,63 @@
+@import '../../bower_components/lesshat/build/lesshat';
+@import '../../bower_components/roboto-fontface/css/roboto-fontface';
+@import './common/common';
+@import './common/company-logos';
+@import './common/icons-font';
+@import './common/icons-glyphs';
+@import './common/variables';
+@import './screen/navigation';
+@import './screen/slide-download';
+@import './screen/slide-experience';
+@import './screen/slide-general';
+@import './screen/slide-skills';
+
+@page {
+    size: A4;
+    margin: 20px 0 20px 0;
+}
+
+@page :first {
+    margin: 0;
+}
+
+html, body {
+    font-size: 18px;
+    color: #000000;
+}
+
+nav, #download {
+    display: none;
+}
+
+section {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+}
+
+#container {
+    width: 100%;
+}
+
+#general, #skills, #experience {
+    page-break-after: always;
+}
+
+#experience .item-quadecco {
+    page-break-before: always;
+    padding-top: 50px;
+
+    .company-logo {
+        top: 50px;
+    }
+}
+
+#skills .group-networktechnologies {
+    page-break-before: always;
+    padding-top: 50px;
+}

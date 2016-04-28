@@ -39,8 +39,8 @@ gulp.task(
             'scripts'
         ),
         gulp.parallel(
-            'pdf',
-            (plugins.util.env.production ? 'gzip' : 'null')
+            'pdf'/*,
+            (plugins.util.env.production ? 'gzip' : 'null')*/
         )
     )
 );

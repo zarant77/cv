@@ -8,11 +8,11 @@ mixin sidebarItem(item)
 
 section#general
     #header
-        #photo
+        #photo.wow.rollIn
             img(src=generalInfo.photo)
 
-        h1=generalInfo.name
-        h2=generalInfo.position
+        h1.wow.zoomInDown=generalInfo.name
+        h2.wow.lightSpeedIn=generalInfo.position
 
     div.content
         div.block

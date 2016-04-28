@@ -33,7 +33,7 @@ section#skills.block
 
             - each skill, skillTitle in group
                 - var name = skillTitle.replace(new RegExp('[^a-z]', 'gi'), '').toLowerCase();
-                div.row
+                div.row.wow
                     div.icon(class='icon-' + name)
 
                     div.title=skillTitle

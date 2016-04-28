@@ -6,6 +6,8 @@ $(function () {
         Layout.navigate($(this).attr('href').replace('#', ''));
     });
 
+    new WOW().init();
+
     Layout.init();
 
     $(window).on('resize', function () {

@@ -7,6 +7,8 @@
     "jquery-mousewheel": "^3.1.13",
     "jquery-touchswipe": "^1.6.15",
     "roboto-fontface": "^0.4.5",
-    "lesshat": "^3.0.2"
+    "lesshat": "^3.0.2",
+    "animate.css": "^3.5.1",
+    "wow": "wowjs#^1.1.2"
   }
 }

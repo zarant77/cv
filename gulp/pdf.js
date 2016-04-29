@@ -13,10 +13,8 @@ module.exports = function (gulp, $, options) {
         var settings = JSON.parse(fs.readFileSync(__dirname + '/../src/content/settings.json'));
 
         var config = {
-            width: '1000px',
-            height: '1500px',
-            //format: 'A4',
-            //orientation: 'portrait', // portrait or landscape
+            format: 'A4',
+            orientation: 'portrait',
             base: 'file://' + options.dir.dest + '/'
         };
 

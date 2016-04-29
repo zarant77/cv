@@ -5,23 +5,12 @@
 @import './common/icons-font';
 @import './common/icons-glyphs';
 @import './common/variables';
-@import './screen/navigation';
-@import './screen/slide-download';
 @import './screen/slide-experience';
 @import './screen/slide-general';
 @import './screen/slide-skills';
 
-@page {
-    size: A4;
-    margin: 20px 0 20px 0;
-}
-
-@page :first {
-    margin: 0;
-}
-
 html, body {
-    font-size: 18px;
+    font-size: 14px;
     color: #000000;
 }
 
@@ -48,16 +37,75 @@ section {
     page-break-after: always;
 }
 
-#experience .item-quadecco {
-    page-break-before: always;
-    padding-top: 50px;
+#general {
+    .sidebar {
+        width: 230px;
+    }
 
-    .company-logo {
-        top: 50px;
+    .content {
+        left: 230px;
+        width: 350px;
+
+        .block {
+            padding: 0;
+        }
+
+        li {
+            line-height: 18px;
+            margin: 0 0 6px 0;
+        }
     }
 }
 
-#skills .group-networktechnologies {
-    page-break-before: always;
-    padding-top: 50px;
+#skills {
+    .row {
+        width: 100%;
+        height: 38px;
+
+        .icon {
+            left: 5px;
+            top: 5px;
+        }
+
+        .title {
+            left: 60px;
+            top: 2px;
+        }
+
+        .exp {
+            left: 60px;
+            top: 20px;
+        }
+
+        .level {
+            top: 5px;
+            right: 5px;
+        }
+    }
+
+    .group-relationaldbms,
+    .group-toolsframeworks,
+    .group-othertools {
+        page-break-before: always;
+        padding-top: 30px;
+    }
+}
+
+#experience {
+    .item {
+        page-break-after: always;
+        padding-top: 30px;
+
+        .company-logo {
+            top: 30px;
+        }
+    }
+
+    .item-upwork {
+        padding-top: 0 !important;
+
+        .company-logo {
+            top: 0 !important;
+        }
+    }
 }

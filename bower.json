@@ -2,10 +2,7 @@
   "name": "cv",
   "version": "0.0.1",
   "dependencies": {
-    "lodash": "^4.5.0",
     "jquery": "~2.1.4",
-    "jquery-mousewheel": "^3.1.13",
-    "jquery-touchswipe": "^1.6.15",
     "roboto-fontface": "^0.4.5",
     "lesshat": "^3.0.2",
     "animate.css": "^3.5.1",

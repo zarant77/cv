@@ -18,11 +18,12 @@ mixin years(count)
         else
             span=count + ' years'
     else
-        - count = new Date().getFullYear() - count
+        - year = count;
+        - count = new Date().getFullYear() - count;
         if count === 1
             span 1 year
         else
-            span=count + ' years'
+            span=count + ' years (since ' + year + ')'
 
 section#skills.block
     h3 Skills

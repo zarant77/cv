@@ -1,3 +1,8 @@
 {
+  "avatar": "images/avatar.png",
+  "site": "zarant77.github.io",
+  "url": "http://zarant77.github.io/",
+  "title": "Anton Zarubin - CV",
+  "description": "A curriculum vitae is a written overview of my experience and other qualifications.",
   "cvFilename": "CV-Anton-Zarubin.pdf"
 }

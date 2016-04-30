@@ -1,23 +1,23 @@
 doctype html
 html(lang='en')
     head
-        title Anton Zarubin - CV
+        title=settings.title
 
         - if (baseUrl)
             base(href=baseUrl)
 
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        meta(content='images/avatar.png', name='twitter:image:src')
-        meta(content='@zarant77.github.io', name='twitter:site')
+        meta(content=settings.avatar, name='twitter:image:src')
+        meta(content='@' + settings.site, name='twitter:site')
         meta(content='summary', name='twitter:card')
-        meta(content='Anton Zarubin - CV', name='twitter:title')
-        meta(content='A curriculum vitae is a written overview of my experience and other qualifications.', name='twitter:description')
-        meta(content='images/avatar.png', property='og:image')
-        meta(content='Anton Zarubin - CV', property='og:site_name')
+        meta(content=settings.title, name='twitter:title')
+        meta(content=settings.description, name='twitter:description')
+        meta(content=settings.avatar, property='og:image')
+        meta(content=settings.title, property='og:site_name')
         meta(content='profile', property='og:type')
-        meta(content='Anton Zarubin - CV', property='og:title')
-        meta(content='http://zarant77.github.io/', property='og:url')
-        meta(content='A curriculum vitae is a written overview of my experience and other qualifications.', property='og:description')
+        meta(content=settings.title, property='og:title')
+        meta(content=settings.url, property='og:url')
+        meta(content=settings.description, property='og:description')
 
         - if (isPdf)
             link(rel='stylesheet', href='/css/pdf.css')

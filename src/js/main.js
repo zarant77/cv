@@ -18,7 +18,7 @@ var printPdf = function () {
         };
     }
 
-    iframe.src = 'http://localhost:8080/CV-Anton-Zarubin.pdf';
+    iframe.src = 'CV-Anton-Zarubin.pdf';
 };
 
 jQuery(function ($) {

@@ -29,7 +29,7 @@ module.exports = function (gulp, $, options) {
         return gulp.src(options.dir.src + '/index.jade')
             .pipe($.jade(jadeVars({
                 isPdf: true,
-                baseUrl: 'http://' + options.serverHost + ':' + options.serverPort + '/'
+                directory: options.dir.dest
             })))
             .pipe($.rename('index.pdf.html'))
             .pipe(gulp.dest(options.dir.dest));

@@ -3,9 +3,6 @@ html(lang='en')
     head
         title=settings.title
 
-        - if (baseUrl)
-            base(href=baseUrl)
-
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         meta(content=settings.avatar, name='twitter:image:src')
         meta(content='@' + settings.site, name='twitter:site')
@@ -20,7 +17,7 @@ html(lang='en')
         meta(content=settings.description, property='og:description')
 
         - if (isPdf)
-            link(rel='stylesheet', href='/css/pdf.css')
+            link(rel='stylesheet', href=directory + '/css/pdf.css')
         - else
             - var hash = Math.random().toString(36).substring(10);
             link(rel='stylesheet', media='all', href='/css/screen.css?' + hash)

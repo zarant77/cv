@@ -8,6 +8,7 @@ module.exports = function (gulp, $, options) {
         var locals = {
             experience: JSON.parse(fs.readFileSync(__dirname + '/../src/content/experience.json')),
             generalInfo: JSON.parse(fs.readFileSync(__dirname + '/../src/content/general-info.json')),
+            openSource: JSON.parse(fs.readFileSync(__dirname + '/../src/content/open-source.json')),
             settings: JSON.parse(fs.readFileSync(__dirname + '/../src/content/settings.json')),
             skills: JSON.parse(fs.readFileSync(__dirname + '/../src/content/skills.json'))
         };

@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Translation manager",
+    "url": "https://github.com/zarant77/translation-manager",
+    "name": "translation-manager",
+    "description": "Manager for translation files",
+    "technologies": {
+      "Platforms": "Node.js",
+      "Frameworks": "Express, React, Material-UI",
+      "QA": "Mocha, JSHint",
+      "Another tools": "Less, Gulp, Bower, NPM"
+    }
+  },
+  {
+    "title": "CMS",
+    "url": "https://github.com/zarant77/fluttershy",
+    "name": "fluttershy",
+    "description": "CMS based on Node.js",
+    "technologies": {
+      "Platforms": "Node.js",
+      "Frameworks": "Express, React, Material-UI",
+      "Databases": "Couchbase, Elasticsearch, Redis",
+      "Documentation": "ApiDoc",
+      "QA": "Mocha, JSHint",
+      "Another tools": "Less, Jade, Gulp, Bower, NPM"
+    }
+  }
+]

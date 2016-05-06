@@ -1,0 +1,21 @@
+mixin renderExpItem(item)
+    div.item(class='item-' + item.name)
+        div.title #{item.title}
+
+        div.url
+            a(href=item.url, target='_blank') #{item.url}
+
+        div.description #{item.description}
+
+        div.list
+            h4 Used technologies and tools:
+            ul
+                - each techs, group in item.technologies
+                    li #{group}: #{techs}
+
+
+section#open-source.block
+    h3 Open source projects
+
+    - each item in openSource
+        +renderExpItem(item)

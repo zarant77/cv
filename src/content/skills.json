@@ -2,7 +2,7 @@
   "OS/Platform": {
     "Windows": [1998, 5],
     "Linux": [2004, 5],
-    "FreeBSD": [2, 4]
+    "FreeBSD": [2, 3]
   },
   "Programming Language": {
     "JavaScript": [2004, 5],
@@ -13,19 +13,19 @@
     "Java": [1, 2]
   },
   "NoSQL DBMS": {
-    "MongoDB": [1, 5],
-    "Couchbase": [2, 5],
-    "Elasticsearch": [2, 5],
-    "Redis": [2012, 5]
+    "MongoDB": [1, 4],
+    "Couchbase": [2, 4],
+    "Elasticsearch": [2, 4],
+    "Redis": [2013, 4]
   },
   "Relational DBMS": {
-    "MS SQL": [3, 5],
+    "MS SQL": [3, 4],
     "MySQL": [2004, 5],
     "PostgreSQL": [1, 3]
   },
   "ORM": {
-    "Sequelize": [2013, 5],
-    "Mongoose": [1, 5]
+    "Sequelize": [2013, 4],
+    "Mongoose": [1, 4]
   },
   "Team Collaboration Tools": {
     "Git": [5, 5],
@@ -36,12 +36,12 @@
   },
   "Network Technologies": {
     "HTTP(S) REST": [2011, 5],
-    "OAuth (1, 2)": [1, 4],
+    "OAuth (1, 2)": [1, 3],
     "WebSockets": [1, 4]
   },
   "Tools/Frameworks": {
-    "Node.js": [2012, 5],
-    "Express.js": [2012, 5],
+    "Node.js": [2013, 5],
+    "Express.js": [2013, 5],
     "HAPI": [0, 5],
     "jQuery": [2009, 5],
     "Angular": [1, 3],
@@ -50,21 +50,21 @@
     "NW.js": [0, 3],
     "PhoneGap": [0, 2],
     "Cordova": [0, 1],
-    "Jade": [2012, 5],
-    "LESS": [2012, 5],
+    "Jade": [2013, 5],
+    "LESS": [2013, 5],
     "SASS": [0, 2],
-    "Bootstrap": [2012, 5],
+    "Bootstrap": [2013, 5],
     "Material-UI": [2004, 4]
   },
   "Other Tools": {
     "Gulp": [2015, 5],
-    "Grunt": [2012, 5],
-    "NPM": [2012, 5],
-    "Bower": [2012, 5],
+    "Grunt": [2013, 5],
+    "NPM": [2013, 5],
+    "Bower": [2013, 5],
     "ApiDoc": [2014, 5],
     "RAML": [1, 3],
     "Swagger": [1, 3],
-    "Mocha": [2012, 5],
+    "Mocha": [2013, 5],
     "JSHint": [2014, 5]
   }
 }

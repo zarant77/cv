@@ -10,7 +10,7 @@
     "update": true
   },
   "scripts": {
-    "build": "gulp --production",
+    "build": "node_modules/gulp/bin/gulp.js --production",
     "check": "node node_modules/jshint/bin/jshint --config .jshintrc src/**/*.js || true"
   },
   "pre-commit": [
@@ -22,7 +22,7 @@
     "glob": "^7.0.3",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-concat": "^2.6.0",
-    "gulp-connect": "^3.2.2",
+    "gulp-connect": "^5.0.0",
     "gulp-gzip": "^1.2.0",
     "gulp-html-pdf": "^0.3.0",
     "gulp-jade": "^1.1.0",
@@ -30,7 +30,7 @@
     "gulp-load-plugins": "^1.2.2",
     "gulp-minify-css": "^1.2.4",
     "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.5.3",
+    "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
     "jshint": "^2.9.1",

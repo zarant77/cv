@@ -7,8 +7,11 @@ module.exports = function (gulp, $, options) {
 
     var jadeVars = function (vars) {
         var locals = {
+            inline: function (file) {
+                return fs.readFileSync(path.join(__dirname, '/../tmp/', file));
+            },
             svg: function (file) {
-                var filename = path.join(__dirname, '/../src/images/icons/', file + '.svg');
+                var filename = path.join(__dirname, '/../src/icons/', file + '.svg');
 
                 if (fs.existsSync(filename)) {
                     return fs.readFileSync(filename);

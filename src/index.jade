@@ -17,11 +17,13 @@ html(lang='en')
         meta(content=settings.description, property='og:description')
 
         - if (isPdf)
-            link(rel='stylesheet', href=directory + '/css/pdf.css')
+            - var css = inline('pdf.css');
+            style(type='text/css')!= css
         - else
-            - var hash = Math.random().toString(36).substring(10);
-            link(rel='stylesheet', media='all', href='css/screen.css?' + hash)
-            script(type='text/javascript', src='js/main.js?' + hash)
+            - var css = inline('screen.css');
+            - var js = inline('main.js');
+            style(type='text/css', media='all')!= css
+            script(type='text/javascript')!= js
 
         mixin svg(iconName, className)
             - var xml = svg(iconName)

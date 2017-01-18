@@ -21,6 +21,18 @@ var printPdf = function () {
     iframe.src = 'CV-Anton-Zarubin.pdf';
 };
 
+var preloadImages = function () {
+    var toPreload = ['avatar.png', 'bg.png', 'companies.png'];
+    var images = [];
+
+    for (var i = 0; i < toPreload.length; i++) {
+        images[i] = new Image();
+        images[i].src = 'images/' + toPreload[i];
+    }
+};
+
+preloadImages();
+
 jQuery(function ($) {
     var slides = {};
 
@@ -56,7 +68,7 @@ jQuery(function ($) {
         adjustLayout();
     });
 
-    $(window).on('keydown', function(evt) {
+    $(window).on('keydown', function (evt) {
         if (evt.ctrlKey && evt.keyCode === 80) {
             evt.preventDefault();
             printPdf();

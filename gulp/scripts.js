@@ -8,7 +8,7 @@ module.exports = function (gulp, $, options) {
                 options.dir.src + '/js/*.js'
             ])
             .pipe($.concat('main.js'))
-            .pipe(gulp.dest(options.dir.dest + '/js'))
+            .pipe(gulp.dest(options.dir.tmp))
             .pipe($.connect.reload());
     });
 };

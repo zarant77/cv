@@ -3,6 +3,7 @@
 var options = {
     dir: {
         src: __dirname + '/src',
+        tmp: __dirname + '/tmp',
         dest: __dirname + '/build',
         modules: __dirname + '/bower_components'
     },
@@ -32,15 +33,11 @@ gulp.task(
     'default',
     gulp.series(
         'clean',
-        gulp.parallel(
-            'copy',
-            'less',
-            'jade',
-            'scripts'
-        ),
-        gulp.parallel(
-            'pdf'/*,
-            (plugins.util.env.production ? 'gzip' : 'null')*/
-        )
+        'copy',
+        'less',
+        'scripts',
+        'jade',
+        'pdf',
+        (plugins.util.env.production ? 'gzip' : 'null')
     )
 );

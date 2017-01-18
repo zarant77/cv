@@ -5,7 +5,7 @@ module.exports = function (gulp, $, options) {
         return gulp.src(options.dir.src + '/stylesheets/*.less')
             .pipe($.less())
             .pipe($.util.env.production ? $.minifyCss() : $.util.noop())
-            .pipe(gulp.dest(options.dir.dest + '/css'))
+            .pipe(gulp.dest(options.dir.tmp))
             .pipe($.connect.reload());
     });
 };

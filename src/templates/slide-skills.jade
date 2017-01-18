@@ -32,15 +32,15 @@ section#skills.block
     div.descr
         div
             +svg('belt', 'level-1')
-            i White belt - Basic level. (Worked with it several times)
+            span White belt - Basic level. (Worked with it several times)
 
         div
             +svg('belt', 'level-2')
-            i Green belt - Strong knowledge. (Many times used it on many projects)
+            span Green belt - Strong knowledge. (Many times used it on many projects)
 
         div
             +svg('belt', 'level-3')
-            i Black belt - I'm a ninja!
+            span Black belt - I'm a ninja!
 
     - each group, groupTitle in skills
         div.group(class='group-' + groupTitle.replace(new RegExp('[^a-z]', 'gi'), '').toLowerCase())

@@ -3,6 +3,28 @@
         margin: 0 0 10px 0;
     }
 
+    .descr {
+        margin: 0 0 20px 0;
+        padding: 10px;
+        border-radius: 5px;
+        background: @colorSecondaryBg;
+
+        div {
+            margin: 5px 0 5px 0;
+
+            i {
+                display: inline-block;
+                height: 28px;
+                line-height: 28px;
+                vertical-align: bottom;
+
+                &.icon {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
     .group {
         margin: 0 0 20px 0;
     }
@@ -17,11 +39,10 @@
         .border-radius(5px);
         .defaultTransition();
 
-        .icon {
+        .tech {
             position: absolute;
             left: 10px;
             top: 10px;
-            font-size: 30px;
         }
 
         .title {
@@ -43,7 +64,6 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            font-size: 24px;
         }
     }
 

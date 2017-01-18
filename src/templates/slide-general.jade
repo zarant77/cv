@@ -1,6 +1,6 @@
 mixin sidebarItem(item)
     li
-        i(class='icon-' + item.icon)
+        +svg(item.icon)
         if item.link
             a(href=item.link, title=item.title, target='_blank')=item.value
         else

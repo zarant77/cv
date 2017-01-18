@@ -20,8 +20,12 @@ html(lang='en')
             link(rel='stylesheet', href=directory + '/css/pdf.css')
         - else
             - var hash = Math.random().toString(36).substring(10);
-            link(rel='stylesheet', media='all', href='/css/screen.css?' + hash)
+            link(rel='stylesheet', media='all', href='css/screen.css?' + hash)
             script(type='text/javascript', src='js/main.js?' + hash)
+
+        mixin svg(iconName, className)
+            - var xml = svg(iconName)
+            i.icon(class='icon-' + iconName + ' ' + (className || ''))!= xml
 
     body
         #container

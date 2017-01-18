@@ -2,10 +2,21 @@ module.exports = function (gulp, $, options) {
     'use strict';
 
     var _ = require('lodash');
+    var path = require('path');
     var fs = require('fs');
 
     var jadeVars = function (vars) {
         var locals = {
+            svg: function (file) {
+                var filename = path.join(__dirname, '/../src/images/icons/', file + '.svg');
+
+                if (fs.existsSync(filename)) {
+                    return fs.readFileSync(filename);
+                } else {
+                    console.error('File not found: "%s"', filename);
+                    return '';
+                }
+            },
             experience: JSON.parse(fs.readFileSync(__dirname + '/../src/content/experience.json')),
             generalInfo: JSON.parse(fs.readFileSync(__dirname + '/../src/content/general-info.json')),
             settings: JSON.parse(fs.readFileSync(__dirname + '/../src/content/settings.json')),

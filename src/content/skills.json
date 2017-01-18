@@ -1,70 +1,73 @@
 {
   "OS/Platform": {
-    "Windows": [1998, 5],
-    "Linux": [2004, 5],
-    "FreeBSD": [2, 3]
+    "Windows": [1998, 3],
+    "Linux": [2004, 3],
+    "FreeBSD": [2, 2],
+    "MacOS": [0, 1]
   },
   "Programming Language": {
-    "JavaScript": [2004, 5],
-    "HTML": [2004, 5],
-    "CSS": [2004, 5],
-    "PHP": [10, 5],
-    "C++": [2, 3],
-    "Java": [1, 2]
+    "JavaScript": [2004, 3],
+    "HTML": [2004, 3],
+    "CSS": [2004, 3],
+    "PHP": [2004, 3],
+    "C++": [2, 2],
+    "Java": [1, 1]
   },
   "NoSQL DBMS": {
-    "MongoDB": [1, 4],
-    "Couchbase": [2, 4],
-    "Elasticsearch": [2, 4],
-    "Redis": [2013, 4]
+    "MongoDB": [1, 2],
+    "Couchbase": [2, 2],
+    "Elasticsearch": [2, 2],
+    "Redis": [2013, 2]
   },
   "Relational DBMS": {
-    "MS SQL": [3, 4],
-    "MySQL": [2004, 5],
-    "PostgreSQL": [1, 3]
+    "MS SQL": [3, 3],
+    "MySQL": [2004, 3],
+    "PostgreSQL": [1, 2]
   },
   "ORM": {
-    "Sequelize": [2013, 4],
-    "Mongoose": [1, 4]
+    "Sequelize": [2013, 2],
+    "Mongoose": [1, 2]
   },
   "Team Collaboration Tools": {
-    "Git": [5, 5],
-    "Subversion": [5, 5],
-    "JIRA": [2, 4],
-    "Redmine": [1, 5],
-    "Target Process": [1, 3]
-  },
-  "Network Technologies": {
-    "HTTP(S) REST": [2011, 5],
-    "OAuth (1, 2)": [1, 3],
-    "WebSockets": [1, 4]
+    "Git": [5, 3],
+    "Subversion": [5, 3],
+    "JIRA": [2, 2],
+    "Redmine": [1, 3],
+    "Target Process": [1, 1]
   },
   "Tools/Frameworks": {
-    "Node.js": [2013, 5],
-    "Express.js": [2013, 5],
-    "HAPI": [0, 5],
-    "jQuery": [2009, 5],
-    "Angular": [1, 3],
-    "Backbone": [0, 2],
-    "React": [0, 4],
-    "NW.js": [0, 3],
-    "PhoneGap": [0, 2],
+    "Node.js": [2013, 3],
+    "Express.js": [2013, 3],
+    "HAPI": [0, 2],
+    "jQuery": [2009, 3],
+    "Angular": [2, 2],
+    "Backbone": [0, 1],
+    "React": [2016, 3],
+    "Redux": [2016, 2],
+    "NW.js": [0, 1],
+    "PhoneGap": [0, 1],
     "Cordova": [0, 1],
-    "Jade": [2013, 5],
-    "LESS": [2013, 5],
-    "SASS": [0, 2],
-    "Bootstrap": [2013, 5],
-    "Material-UI": [2004, 4]
+    "Jade (Pug)": [2013, 3],
+    "LESS": [2013, 3],
+    "SASS": [2015, 3],
+    "Bootstrap": [2013, 3],
+    "Material-UI": [2016, 2]
+  },
+  "Network Technologies": {
+    "HTTP(S) REST": [2012, 3],
+    "OAuth (1, 2)": [1, 1],
+    "WebSockets": [1, 2]
   },
   "Other Tools": {
-    "Gulp": [2015, 5],
-    "Grunt": [2013, 5],
-    "NPM": [2013, 5],
-    "Bower": [2013, 5],
-    "ApiDoc": [2014, 5],
-    "RAML": [1, 3],
-    "Swagger": [1, 3],
-    "Mocha": [2013, 5],
-    "JSHint": [2014, 5]
+    "Gulp": [2015, 3],
+    "Grunt": [2, 3],
+    "NPM": [2013, 3],
+    "Bower": [2013, 3],
+    "Mocha": [2013, 3],
+    "ApiDoc": [2014, 3],
+    "RAML": [1, 2],
+    "Swagger": [1, 2],
+    "JSHint": [2, 3],
+    "ESLint": [1, 3]
   }
 }

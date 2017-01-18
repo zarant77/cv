@@ -1,32 +1,46 @@
-mixin stars(count)
-    - var n = 0
-    while n < 5
-        - n++
-        if n <= count
-            i.icon-star
-        else
-            i.icon-star-empty
+mixin level(num)
+    +svg('belt', 'level-' + num)
 
 mixin years(count)
+    - var amountOfYears = 0;
+    - var str = '';
+
     if typeof count !== 'number'
         span!=count
     else if count < 1000
-        if count < 1
-            span Less than a year
-        else if count === 1
-            span 1 year
-        else
-            span=count + ' years'
+        - amountOfYears = count;
     else
-        - year = count;
-        - count = new Date().getFullYear() - count;
-        if count === 1
-            span 1 year
-        else
-            span=count + ' years (since ' + year + ')'
+        - amountOfYears = new Date().getFullYear() - count;
+
+    if amountOfYears < 1
+        - str = 'Less than a year';
+    else if amountOfYears === 1
+        - str = 'More than a year';
+    else if amountOfYears > 10
+        - str = '10+ years';
+    else
+        - str = amountOfYears + ' years';
+
+    if count > 1000
+        - str += ' (since ' + count + ')';
+
+    span=str
 
 section#skills.block
-    h3 Skills
+    h3 Skills (self attested)
+
+    div.descr
+        div
+            +svg('belt', 'level-1')
+            i White belt - Basic level. (Worked with it several times)
+
+        div
+            +svg('belt', 'level-2')
+            i Green belt - Strong knowledge. (Many times used it on many projects)
+
+        div
+            +svg('belt', 'level-3')
+            i Black belt - I'm a ninja!
 
     - each group, groupTitle in skills
         div.group(class='group-' + groupTitle.replace(new RegExp('[^a-z]', 'gi'), '').toLowerCase())
@@ -35,7 +49,8 @@ section#skills.block
             - each skill, skillTitle in group
                 - var name = skillTitle.replace(new RegExp('[^a-z]', 'gi'), '').toLowerCase();
                 div.row
-                    div.icon(class='icon-' + name)
+                    div.tech
+                        +svg(name)
 
                     div.title=skillTitle
 
@@ -43,4 +58,4 @@ section#skills.block
                         +years(skill[0])
 
                     div.level
-                        +stars(skill[1])
+                        +level(skill[1])

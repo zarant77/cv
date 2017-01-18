@@ -1,6 +1,6 @@
 mixin navItem(title, name)
     a(href='#' + name, title=title)
-        i(class='icon-' + name)
+        +svg(name)
         span=title
 
 nav.wow.slideInRight

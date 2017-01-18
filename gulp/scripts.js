@@ -8,6 +8,7 @@ module.exports = function (gulp, $, options) {
                 options.dir.src + '/js/*.js'
             ])
             .pipe($.concat('main.js'))
+            .pipe($.util.env.production ? $.uglify() : $.util.noop())
             .pipe(gulp.dest(options.dir.tmp))
             .pipe($.connect.reload());
     });

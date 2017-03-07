@@ -7,9 +7,9 @@ mixin sidebarItem(item)
       span(title=item.title)=item.value
 
 section#general
-  #header
+  #header(style=`background-image:url(${inlineImg('bg.gif')})`)
     #photo(data-aos='zoom-in-right')
-      img(src=generalInfo.photo)
+      img(src=inlineImg(generalInfo.photo))
 
     h1(data-aos='fade-left')=generalInfo.name
     h2(data-aos='fade-left')=generalInfo.position

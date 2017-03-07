@@ -1,74 +1,236 @@
 {
   "OS/Platform": {
-    "Windows": [1998, 3],
-    "Linux": [2004, 3],
-    "FreeBSD": [2, 2],
-    "MacOS": [0, 1]
+    "Windows": [
+      1998,
+      3
+    ],
+    "Linux": [
+      2004,
+      3
+    ],
+    "FreeBSD": [
+      2,
+      2
+    ],
+    "MacOS": [
+      0,
+      1
+    ]
   },
   "Programming Language": {
-    "JavaScript": [2004, 3],
-    "HTML": [2004, 3],
-    "CSS": [2004, 3],
-    "PHP": [2004, 3],
-    "C++": [2, 2],
-    "Java": [1, 1]
+    "JavaScript": [
+      2004,
+      3
+    ],
+    "HTML": [
+      2004,
+      3
+    ],
+    "CSS": [
+      2004,
+      3
+    ],
+    "PHP": [
+      2004,
+      3
+    ],
+    "C++": [
+      2,
+      2
+    ],
+    "Java": [
+      1,
+      1
+    ]
   },
   "NoSQL DBMS": {
-    "MongoDB": [1, 2],
-    "Couchbase": [2, 2],
-    "Elasticsearch": [2, 2],
-    "Redis": [2013, 2]
+    "MongoDB": [
+      1,
+      2
+    ],
+    "Couchbase": [
+      2,
+      2
+    ],
+    "Elasticsearch": [
+      2,
+      2
+    ],
+    "Redis": [
+      2013,
+      2
+    ]
   },
   "Relational DBMS": {
-    "MS SQL": [3, 3],
-    "MySQL": [2004, 3],
-    "PostgreSQL": [1, 2]
+    "MS SQL": [
+      3,
+      3
+    ],
+    "MySQL": [
+      2004,
+      3
+    ],
+    "PostgreSQL": [
+      1,
+      2
+    ]
   },
   "ORM": {
-    "Sequelize": [2013, 2],
-    "Mongoose": [1, 2]
+    "Sequelize": [
+      2013,
+      2
+    ],
+    "Mongoose": [
+      1,
+      2
+    ]
   },
   "Team Collaboration Tools": {
-    "Git": [5, 3],
-    "Subversion": [5, 3],
-    "JIRA": [2, 2],
-    "Redmine": [1, 3],
-    "Target Process": [1, 1]
+    "Git": [
+      5,
+      3
+    ],
+    "Subversion": [
+      5,
+      3
+    ],
+    "JIRA": [
+      2,
+      2
+    ],
+    "Redmine": [
+      1,
+      3
+    ],
+    "Target Process": [
+      1,
+      1
+    ]
   },
   "Tools/Frameworks": {
-    "Node.js": [2013, 3],
-    "Express.js": [2013, 3],
-    "HAPI": [0, 2],
-    "jQuery": [2009, 3],
-    "Angular": [2, 2],
-    "Backbone": [0, 1],
-    "React": [2016, 3],
-    "Redux": [2016, 2],
-    "NW.js": [0, 1],
-    "PhoneGap": [0, 1],
-    "Cordova": [0, 1],
-    "Jade (Pug)": [2013, 3],
-    "LESS": [2013, 3],
-    "SASS": [2015, 3],
-    "Bootstrap": [2013, 3],
-    "Material-UI": [2016, 2]
+    "Node.js": [
+      2013,
+      3
+    ],
+    "Express.js": [
+      2013,
+      3
+    ],
+    "HAPI": [
+      0,
+      2
+    ],
+    "jQuery": [
+      2009,
+      3
+    ],
+    "Angular": [
+      2,
+      2
+    ],
+    "Backbone": [
+      0,
+      1
+    ],
+    "React": [
+      2016,
+      3
+    ],
+    "Redux": [
+      2016,
+      2
+    ],
+    "NW.js": [
+      0,
+      1
+    ],
+    "PhoneGap": [
+      0,
+      1
+    ],
+    "Cordova": [
+      0,
+      1
+    ],
+    "Jade (Pug)": [
+      2013,
+      3
+    ],
+    "LESS": [
+      2013,
+      3
+    ],
+    "SASS": [
+      2015,
+      3
+    ],
+    "Bootstrap": [
+      2013,
+      3
+    ],
+    "Material-UI": [
+      2016,
+      2
+    ]
   },
   "Network Technologies": {
-    "HTTP(S) REST": [2012, 3],
-    "OAuth (1, 2)": [1, 1],
-    "WebSockets": [1, 2]
+    "HTTP(S) REST": [
+      2012,
+      3
+    ],
+    "OAuth (1, 2)": [
+      1,
+      1
+    ],
+    "WebSockets": [
+      1,
+      2
+    ]
   },
   "Other Tools": {
-    "NPM": [2013, 3],
-    "Bower": [2013, 3],
-    "Gulp": [2015, 3],
-    "Grunt": [2, 3],
-    "Webpack": [0, 2],
-    "ApiDoc": [2014, 3],
-    "RAML": [1, 2],
-    "Swagger": [1, 2],
-    "JSHint": [2, 3],
-    "ESLint": [1, 3],
-    "Mocha": [2013, 3]
+    "NPM": [
+      2013,
+      3
+    ],
+    "Bower": [
+      2013,
+      3
+    ],
+    "Gulp": [
+      2015,
+      3
+    ],
+    "Grunt": [
+      2,
+      3
+    ],
+    "Webpack": [
+      0,
+      2
+    ],
+    "ApiDoc": [
+      2014,
+      3
+    ],
+    "RAML": [
+      1,
+      2
+    ],
+    "Swagger": [
+      1,
+      2
+    ],
+    "JSHint": [
+      2,
+      3
+    ],
+    "ESLint": [
+      1,
+      3
+    ],
+    "Mocha": [
+      2013,
+      3
+    ]
   }
 }

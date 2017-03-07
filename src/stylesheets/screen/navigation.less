@@ -1,45 +1,44 @@
 nav {
-    position: fixed;
-    z-index: 2;
-    right: 10px;
-    top: 50%;
-    margin-top: -50px;
-    .defaultTransition();
+  position: fixed;
+  z-index: 2;
+  right: 10px;
+  top: 50%;
+  margin-top: -50px;
+  .defaultTransition();
 
-    a {
-        display: block;
-        width: auto;
-        height: 30px;
-        overflow: hidden;
-        text-decoration: none;
-        color: @colorNavLink;
-        font-size: 20px;
+  a {
+    display: block;
+    width: auto;
+    height: 30px;
+    overflow: hidden;
+    text-decoration: none;
+    color: @colorNavLink;
+    font-size: 20px;
 
-
-        span {
-            display: inline-block;
-            float: right;
-            max-width: 0;
-            overflow: hidden;
-            text-align: right;
-            white-space: nowrap;
-            .transition(max-width 1s);
-        }
-
-        i {
-            float: right;
-            width: 30px;
-            text-align: center;
-        }
+    span {
+      display: inline-block;
+      float: right;
+      max-width: 0;
+      overflow: hidden;
+      text-align: right;
+      white-space: nowrap;
+      .transition(max-width 1s);
     }
 
-    a:hover {
-        span {
-            max-width: 1000px;
-        }
+    i {
+      float: right;
+      width: 30px;
+      text-align: center;
     }
+  }
 
-    a.active {
-        color: @colorNavLinkActive;
+  a:hover {
+    span {
+      max-width: 1000px;
     }
+  }
+
+  a.active {
+    color: @colorNavLinkActive;
+  }
 }

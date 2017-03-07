@@ -1,6 +1,6 @@
 mixin renderExpItem(item)
   div.item(class='item-' + item.name)
-    div.company-logo(class=item.name, data-aos='zoom-in-left', data-aos-offset='700')
+    div.company-logo(class=item.name, data-aos='zoom-in-left', style=`background-image:url(${inlineImg("company-" + item.name + ".gif")})`)
 
     div.title #{item.from} - #{item.to || 'Present time'}, #{item.position}
 

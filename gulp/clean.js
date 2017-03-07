@@ -1,7 +1,7 @@
 module.exports = function (gulp, $, options) {
-    'use strict';
+  'use strict';
 
-    gulp.task('clean', function () {
-        return $.del([options.dir.tmp, options.dir.dest]);
-    });
+  gulp.task('clean', function () {
+    return $.del([options.dir.tmp, options.dir.dest]);
+  });
 };

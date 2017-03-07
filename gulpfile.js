@@ -5,7 +5,7 @@ var options = {
         src: __dirname + '/src',
         tmp: __dirname + '/tmp',
         dest: __dirname + '/build',
-        modules: __dirname + '/bower_components'
+        modules: __dirname + '/node_modules'
     },
     taskPath: './gulp/',
     livereloadPort: 1234,
@@ -36,7 +36,7 @@ gulp.task(
         'copy',
         'less',
         'scripts',
-        'jade',
+        'html',
         'pdf',
         (plugins.util.env.production ? 'gzip' : 'null')
     )

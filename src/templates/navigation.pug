@@ -1,0 +1,10 @@
+mixin navItem(title, name)
+  a(href='#' + name, title=title)
+    +svg(name)
+    span=title
+
+nav(data-aos='fade-left')
+  +navItem('General', 'general')
+  +navItem('Skills', 'skills')
+  +navItem('Experience', 'experience')
+  +navItem('Download CV', 'download')

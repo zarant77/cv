@@ -1,13 +1,13 @@
 module.exports = function (gulp, $, options) {
     'use strict';
 
-    gulp.task('watch-jade', function () {
+    gulp.task('watch-html', function () {
         return gulp.watch(
             [
-                options.dir.src + '/**/*.jade',
+                options.dir.src + '/**/*.pug',
                 options.dir.src + '/**/*.json'
             ],
-            gulp.parallel('jade')
+            gulp.parallel('html')
         );
     });
 
@@ -34,9 +34,9 @@ module.exports = function (gulp, $, options) {
 
     gulp.task('watch', gulp.series(
         'clean',
-        gulp.parallel('copy', 'jade', 'less', 'scripts'),
+        gulp.parallel('copy', 'html', 'less', 'scripts'),
         'server',
         'pdf',
-        gulp.parallel('watch-jade', 'watch-less', 'watch-scripts')
+        gulp.parallel('watch-html', 'watch-less', 'watch-scripts')
     ));
 };

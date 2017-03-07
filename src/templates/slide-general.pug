@@ -1,0 +1,35 @@
+mixin sidebarItem(item)
+  li
+    +svg(item.icon)
+    if item.link
+      a(href=item.link, title=item.title, target='_blank')=item.value
+    else
+      span(title=item.title)=item.value
+
+section#general
+  #header
+    #photo(data-aos='zoom-in-right')
+      img(src=generalInfo.photo)
+
+    h1(data-aos='fade-left')=generalInfo.name
+    h2(data-aos='fade-left')=generalInfo.position
+
+  div.content
+    div.block
+      h3 Summary
+      ul
+        each item in generalInfo.summary
+          li=item
+
+    div.block
+      h3 Education
+      ul
+        each item in generalInfo.education
+          li=item
+
+  div.sidebar
+    div.block
+      h3 Contact
+      ul
+        each item in generalInfo.contact
+          +sidebarItem(item)

@@ -5,7 +5,7 @@ module.exports = function (gulp, $, options) {
     var path = require('path');
     var fs = require('fs');
 
-    var jadeVars = function (vars) {
+    var templateVars = function (vars) {
         var locals = {
             inline: function (file) {
                 return fs.readFileSync(path.join(__dirname, '/../tmp/', file));
@@ -32,16 +32,16 @@ module.exports = function (gulp, $, options) {
         };
     };
 
-    gulp.task('jade', function () {
-        return gulp.src(options.dir.src + '/index.jade')
-            .pipe($.jade(jadeVars()))
+    gulp.task('html', function () {
+        return gulp.src(options.dir.src + '/index.pug')
+            .pipe($.pug(templateVars()))
             .pipe(gulp.dest(options.dir.dest))
             .pipe($.connect.reload());
     });
 
-    gulp.task('jade-pdf', function () {
-        return gulp.src(options.dir.src + '/index.jade')
-            .pipe($.jade(jadeVars({
+    gulp.task('html-pdf', function () {
+        return gulp.src(options.dir.src + '/index.pug')
+            .pipe($.pug(templateVars({
                 isPdf: true,
                 directory: options.dir.dest
             })))

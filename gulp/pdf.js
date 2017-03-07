@@ -25,7 +25,7 @@ module.exports = function (gulp, $, options) {
     });
 
     gulp.task('pdf', gulp.series(
-        'jade-pdf',
+        'html-pdf',
         'make-pdf',
         'remove-index-pdf'
     ));

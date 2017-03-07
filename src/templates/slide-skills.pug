@@ -1,0 +1,61 @@
+mixin level(num)
+  +svg('belt', 'level-' + num)
+
+mixin years(count)
+  - var amountOfYears = 0;
+  - var str = '';
+
+  if typeof count !== 'number'
+    span!=count
+  else if count < 1000
+    - amountOfYears = count;
+  else
+    - amountOfYears = new Date().getFullYear() - count;
+
+  if amountOfYears < 1
+    - str = 'Less than a year';
+  else if amountOfYears === 1
+    - str = 'More than a year';
+  else if amountOfYears > 10
+    - str = '10+ years';
+  else
+    - str = amountOfYears + ' years';
+
+  if count > 1000
+    - str += ' (since ' + count + ')';
+
+  span=str
+
+section#skills.block
+  h3 Skills (self attested)
+
+  div.descr
+    div
+      +svg('belt', 'level-1')
+      span White belt - Basic level. (Worked with it several times)
+
+    div
+      +svg('belt', 'level-2')
+      span Green belt - Strong knowledge. (Many times used it on many projects)
+
+    div
+      +svg('belt', 'level-3')
+      span Black belt - I'm a ninja!
+
+  each group, groupTitle in skills
+    div.group(class='group-' + groupTitle.replace(new RegExp('[^a-z]', 'gi'), '').toLowerCase())
+      h4=groupTitle
+
+      each skill, skillTitle in group
+        - var name = skillTitle.replace(new RegExp('[^a-z]', 'gi'), '').toLowerCase();
+        div.row
+          div.tech
+            +svg(name)
+
+          div.title=skillTitle
+
+          div.exp
+            +years(skill[0])
+
+          div.level
+            +level(skill[1])

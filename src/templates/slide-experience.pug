@@ -1,0 +1,30 @@
+mixin renderExpItem(item)
+  div.item(class='item-' + item.name)
+    div.company-logo(class=item.name, data-aos='zoom-in-left', data-aos-offset='700')
+
+    div.title #{item.from} - #{item.to || 'Present time'}, #{item.position}
+
+    div.subtitle
+      span.company #{item.company}
+      a(href=item.url, target='_blank') #{item.url}
+
+    div.description #{item.description}
+
+    div.list
+      h4 Primary Responsibilities:
+      ul
+        each resp in item.responsibilities
+          li #{resp}
+
+    div.list
+      h4 Used technologies and tools:
+      ul
+        each techs, group in item.technologies
+          li #{group}: #{techs}
+
+
+section#experience.block
+  h3 Experience
+
+  each item in experience
+    +renderExpItem(item)

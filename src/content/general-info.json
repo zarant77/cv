@@ -36,18 +36,6 @@
       "icon": "skype",
       "value": "anton_zarubin",
       "link": ""
-    },
-    {
-      "title": "GitHub",
-      "icon": "github",
-      "value": "github.com/zarant77",
-      "link": "https://github.com/zarant77"
-    },
-    {
-      "title": "NPM",
-      "icon": "npm",
-      "value": "npmjs.com/~zarant77",
-      "link": "https://www.npmjs.com/~zarant77"
     }
   ]
 }

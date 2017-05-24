@@ -1,12 +1,34 @@
 [
   {
-    "company": "Freelancer (Odesk / Upwork)",
-    "url": "http://upwork.com/",
-    "name": "upwork",
+    "company": "Match2One",
+    "url": "https://www.match2one.com/",
+    "name": "match2one",
+    "position": "Frontend Developer",
+    "from": 2016,
+    "to": 2017,
+    "description": "Match2One had all first-hand seen the fragmented programmatic landscape and all the challenges that small and medium advertiser are facing. Match2One democratize technology for businesses by creating innovative products that empower customers to grow.",
+    "responsibilities": [
+      "Design structure of project from scratch",
+      "Develop, test and deploy web application",
+      "Fix bugs, troubleshoot and resolve problems",
+      "Code review"
+    ],
+    "technologies": {
+      "Platforms": "Javascript",
+      "Frameworks": "React, Redux",
+      "Documentation": "ApiDoc",
+      "QA": "Mocha, ESLint",
+      "Another tools": "Sass, Gulp, Babel, NPM"
+    }
+  },
+  {
+    "company": "MarketWave)",
+    "url": "http://www.market-wave.com/",
+    "name": "marketwave",
     "position": "Node.js Developer",
     "from": 2014,
-    "to": 0,
-    "description": "More than year I used to work remotely for MarketWave. (http://www.market-wave.com/)\nMarketWave is company who provide customer multi-channels management (Phone, Live Chat, etc).\nCompany provide sales support for visitors with key leaders of e-commerce.\nThey was my general clients.",
+    "to": 2016,
+    "description": "MarketWave is company who provide customer multi-channels management (Phone, Live Chat, etc).\nCompany provide sales support for visitors with key leaders of e-commerce.",
     "responsibilities": [
       "Design, develop, test and deploy web applications",
       "Develop appropriate code structures to solve specific tasks according to standards",

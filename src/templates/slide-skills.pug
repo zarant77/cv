@@ -47,7 +47,7 @@ section#skills.block
       h4=groupTitle
 
       each skill, skillTitle in group
-        - var name = skillTitle.replace(new RegExp('[^a-z]', 'gi'), '').toLowerCase();
+        - var name = skillTitle.replace(new RegExp('[^a-z#+]', 'gi'), '').toLowerCase();
         div.row
           div.tech
             +svg(name)

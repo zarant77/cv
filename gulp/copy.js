@@ -6,7 +6,7 @@ module.exports = function (gulp, $, options) {
   });
 
   gulp.task('copy-images', function () {
-    return gulp.src(options.dir.src + '/images/avatar.png').pipe(gulp.dest(options.dir.dest));
+    return gulp.src(options.dir.src + '/images/avatar.jpg').pipe(gulp.dest(options.dir.dest));
   });
 
   gulp.task('copy', gulp.parallel('copy-favicon', 'copy-images'));

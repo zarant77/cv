@@ -10,8 +10,8 @@
     "update": true
   },
   "scripts": {
-    "build": "node_modules/gulp/bin/gulp.js --production",
-    "check": "node node_modules/jshint/bin/jshint --config .jshintrc src/**/*.js || true"
+    "build": "npx gulp --production",
+    "check": "npx jshint --config .jshintrc src/**/*.js || true"
   },
   "pre-commit": [
     "check"
